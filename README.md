@@ -38,3 +38,25 @@ Le tecnologie utilizzate per questa applicazione sono:
 - Java Mail Sender
  ![image](https://github.com/user-attachments/assets/b02bbc4f-1006-43e8-9d5f-941a000a5644)
 
+Dependencies
+Thymeleaf, Spring Web, Spring Boot Web Tools, MySql Driver, Spring Data JDBC
+
+Java
+
+Database Config - configures the connection to the MySql database
+Mail Config - configures the connection to gmail
+Email Service - provides some useful mail templates
+Pc - is the personal computer in store class: it has model name, brand,description, price, image, quantity available in store and quantity sold. reflects the columns of the database table
+PcSelezionato - is the personal computer in shopping cart class: it has model name, brand,description, price, image, quantity selected for purchase
+PcJdbcTemplate - is the class containing the database queries: select, insert, delete and update quantity (to update the available number and sold number of a given pc)
+MyController - a class that handles HTTP requests and responses, facilitating the interaction between the front end and the back end of the application.
+Html
+Layout - the layout of every html page. It contains the css libraries, JavaScript scripts, a navbar, a sidebar and a footer
+Index - the homepage: it contains a shop description, the card of the item sold in shop and a div with a random mario card obtained interrogating an API
+Carrello - the cart page: it contains a table with the list of every item purchased. The user can modify the quantity, remove from cart and purchase the selected items
+Fattura - the order confirmation page: it contains a table with the list of every item purchased and a box where the user can put the email address to recieve an order recap
+
+Contacts:
+
+Linkedin: www.linkedin.com/in/marco-cerilli
+Github: 

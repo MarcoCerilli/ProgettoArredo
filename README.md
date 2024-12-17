@@ -12,31 +12,28 @@ Le tecnologie utilizzate per questa applicazione sono:
 - Le dipendenze di SpringBoot utilizzate sono:
   
 - Spring Web
-  ![image](https://github.com/user-attachments/assets/7c2dd333-ba15-4e58-9488-f8096b7827fe)
-
+ 
 
 - Spring Security
- ![image](https://github.com/user-attachments/assets/2b96fb94-10de-4735-bcf8-7b5ced3d2493)
 
 
 - Spring Boot DevTools
-  ![image](https://github.com/user-attachments/assets/31df0832-1433-477f-89d2-67ca19a7ca87)
+  
 
 
 - Spring Data JDBC
- ![image](https://github.com/user-attachments/assets/2d0474f7-bd25-45af-8f4d-8deb3fc4a474)
+
 
 
 - My SQL Driver
-  ![image](https://github.com/user-attachments/assets/ccb24487-8fed-4f0f-92a3-aea56e534318)
-
+ 
 
 - Thymeleaf
-  ![image](https://github.com/user-attachments/assets/25ad47bd-6bf0-4226-a390-da6f03adc7db)
+
 
 
 - Java Mail Sender
- ![image](https://github.com/user-attachments/assets/b02bbc4f-1006-43e8-9d5f-941a000a5644)
+
 
 
 
@@ -44,7 +41,7 @@ Le tecnologie utilizzate per questa applicazione sono:
   - [Database Config](ProgettoIkea/src/main/java/com/example/demo/DatabaseConfig.java)- _configures the connection to the MySql database_
   - [Mail Config](ProgettoIkea/src/main/java/com/example/demo/MailConfig.java) - _configures the connection to gmail_
   - [Email Service](ProgettoIkea/src/main/java/com/example/demo/EmailService.java) - _provides some useful mail templates_
-  - [MyController](ProgettoIkea/src/main/java/com/example/demo/MyController.java) - _a class that handles HTTP requests and responses, facilitating the interaction between the front end and the back end of the application._
+  - [MyController](ProgettoIkea/src/main/java/com/example/demo/MyController.java) - _a class that handles HTTP requests and responses, facilitating the interaction between        the front end and the back end of the application._
   - 
 ### Html
   

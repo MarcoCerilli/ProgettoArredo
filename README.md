@@ -7,7 +7,7 @@
     <style>
         /* Stile per ridimensionare le immagini come miniature */
         .miniatura {
-            width: 100px; /* Imposta una larghezza fissa per le immagini */
+            width: 50px; /* Imposta una larghezza fissa per le immagini */
             height: auto; /* Mantiene il rapporto di aspetto originale */
             margin: 10px;
         }

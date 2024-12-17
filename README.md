@@ -43,9 +43,7 @@ Le tecnologie utilizzate per questa applicazione sono:
 ### Java
   - [Database Config](ProgettoIkea/src/main/java/com/example/demo/DatabaseConfig.java)- _configures the connection to the MySql database_
   - [Mail Config](ProgettoIkea/src/main/java/com/example/demo/MailConfig.java) - _configures the connection to gmail_
-  - [Email Service]() - _provides some useful mail templates_
-  - 
-  - 
+  - [Email Service](ProgettoIkea/src/main/java/com/example/demo/EmailService.java) - _provides some useful mail templates_
   - [MyController]() - _a class that handles HTTP requests and responses, facilitating the interaction between the front end and the back end of the application._
   - 
 ### Html

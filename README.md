@@ -57,7 +57,11 @@ Thymeleaf, Spring Web, Spring Boot Web Tools, MySql Driver, Spring Data JDBC
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Contacts:
+## Contact
 
-Linkedin: www.linkedin.com/in/marco-cerilli
-Github: https://github.com/MarcoCerilli/ProgettoArredo.git
+Irene Fabbri - [www.linkedin.com/in/marco-cerilli] - cerillimarco15@gmail.com
+
+Project Link:    https://github.com/MarcoCerilli/ProgettoArredo.git
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+

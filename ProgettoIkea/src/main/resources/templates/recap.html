@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recap Acquisto Moderno</title>
+    
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f3f7fa; /* Sfondo moderno e chiaro */
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container principale */
+        .container {
+            margin-top: 50px;
+            padding: 40px;
+            border-radius: 12px;
+            background: #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+        }
+
+        /* Titolo */
+        h1 {
+            font-size: 2.8rem;
+            color: #0077c2;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #005b96;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* Tabelle con stile moderno */
+        table {
+            margin-top: 20px;
+        }
+
+        table.striped tbody tr:nth-child(odd) {
+            background-color: #f9f9fc;
+        }
+
+        table img {
+            max-width: 70px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .highlight {
+            color: #0288d1;
+            font-weight: 700;
+        }
+
+        /* Bottoni personalizzati */
+        .btn-custom {
+            background: linear-gradient(135deg, #42a5f5, #0077c2);
+            color: white !important;
+            font-weight: 600;
+            border-radius: 50px;
+            padding: 10px 25px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background: linear-gradient(135deg, #0077c2, #42a5f5);
+        }
+
+        .btn-flat {
+            color: #42a5f5 !important;
+            border: 1px solid #42a5f5;
+            border-radius: 50px;
+            font-weight: 600;
+            padding: 10px 20px;
+        }
+
+        .btn-flat:hover {
+            background-color: #42a5f5;
+            color: #fff !important;
+        }
+
+        /* Miglioramenti responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            table img {
+                max-width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container z-depth-3">
+        <h1>Recap dell'Acquisto</h1>
+        
+        <table class="striped centered responsive-table">
+            <thead>
+                <tr>
+                    <th>Nome Prodotto</th>
+                    <th>Marca</th>
+                    <th>Immagine</th>
+                    <th>Quantità</th>
+                    <th>SubTotale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="prodotto : ${lista}">
+                    <td th:text="${prodotto.nome}"></td>
+                    <td th:text="${prodotto.marca}"></td>
+                    <td><img th:src="${prodotto.url}" alt="Immagine prodotto"></td>
+                    <td th:text="${prodotto.pezzi}"></td>
+                    <td><span class="highlight">&euro; <span th:text="${prodotto.prezzo}"></span></span></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="right-align highlight">Totale:</td>
+                    <td class="highlight">&euro; <span th:text="${somma}"></span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Totale da pagare: <span class="highlight">&euro; <span th:text="${somma}"></span></span></h3>
+
+        <div class="center-align">
+            <a th:href="${urlRicevuta}" class="btn btn-custom waves-effect waves-light">Visualizza Ricevuta</a>
+            <br><br>
+            <a href="/" class="btn-flat waves-effect">&larr; Torna ad aggiungere prodotti</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrello e Store</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            M.FormSelect.init(elems);
+        });
+    </script>
+    <style>
+   /* Stile generale per il body */
+body {
+    background-image: url('arredo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centrare logo carrello e store */
+.logo-carrello,
+.logo-store {
+    display: block;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Stili generali per titoli */
+h1, h3 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #005b96;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+}
+
+
+/* Stile titoli delle card */
+.card-title {
+    font-family: 'Poppins', sans-serif;
+   color:black !important;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Miglioramento layout delle card */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.col.s12.m4 {
+    flex: 1 1 300px;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+/* Stile card */
+.card {
+    margin: 15px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Immagini all'interno delle card */
+.card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Stili bottoni principali */
+.btn {
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    line-height: normal;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Bottoni blu */
+.btn-blue {
+    background: linear-gradient(45deg, #0077c2, #005b96);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-blue:hover {
+    background: linear-gradient(45deg, #005b96, #003f72);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Bottoni rossi */
+.btn-red {
+    background: linear-gradient(45deg, #d32f2f, #b71c1c);
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-red:hover {
+    background: linear-gradient(45deg, #b71c1c, #8e0000);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Bottoni piccoli */
+.btn-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #33a1fd, #0077c2);
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-small:hover {
+    background: linear-gradient(45deg, #0077c2, #005b96);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Tabelle del carrello */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+td img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Media query per schermi piccoli */
+@media (max-width: 768px) {
+    .col.s12.m4 {
+        max-width: 100%;
+    }
+
+    .logo-carrello, .logo-store {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-title {
+        font-size: 16px;
+    }
+
+    .btn-small {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-content form {
+        padding: 10px;
+    }
+
+    .input-field input, .input-field select {
+        font-size: 12px;
+    }
+}
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sezione Carrello -->
+        <div class="card blue-grey lighten-5">
+            <div class="card-content">
+                <hr>
+
+                <!-- Logo Carrello centrato -->
+                <img src="https://i.postimg.cc/brnNvhZ6/Bianco-Semplice-Arredamento-Casa-Logo.png" alt="Logo Carrello" class="logo-carrello">
+
+                <hr>
+                <table class="striped centered">
+                    <thead>
+                        <tr>
+                            <th>Nome Prodotto</th>
+                            <th>Marca</th>
+                            <th>Prezzo</th>
+                            <th>Immagine</th>
+                            <th>Pezzi</th>
+                        </tr>
+                    </thead>
+                   <tbody>
+    <tr th:each="prodotto : ${carrello}">
+        <td th:text="${prodotto.nome}"></td>
+        <td th:text="${prodotto.marca}"></td>
+        <td>€<span th:text="${prodotto.prezzo}"></span></td>
+        <td><img th:src="${prodotto.url}" /></td>
+        <td th:text="${prodotto.pezzi}"></td>
+        <!-- Aggiunta del pulsante Rimuovi -->
+        <td>
+            <form action="/del" method="post">
+                <input type="hidden" name="nome" th:value="${prodotto.nome}">
+                <button type="submit" class="btn-small waves-effect waves-light btn-red">Rimuovi</button>
+            </form>
+        </td>
+    </tr>
+</tbody>
+
+                </table>
+                <div class="row">
+                    <div class="col s12">
+                        <h4>Scrivi la tua mail</h4>
+                        <form action="/buy" method="post">
+                            <div class="input-field">
+                                <input type="email" id="mail" name="mail" required>
+                                <label for="mail">Email</label>
+                            </div>
+                            <div class="input-field">
+                                <select id="testToken" name="token" required>
+                                    <option value="" disabled selected>Seleziona una carta</option>
+                                    <option value="tok_visa">Visa Test Card</option>
+                                    <option value="tok_mastercard">MasterCard Test Card</option>
+                                    <option value="tok_amex">American Express Test Card</option>
+                                    
+                                </select>
+                                <label for="testToken">Test Token</label>
+                            </div>
+                            <button type="submit" class="btn waves-effect waves-light btn-blue">Compra</button>
+                        </form>
+                        <form action="/clear" method="post" style="margin-top: 15px;">
+                            <button type="submit" class="btn red lighten-2 waves-effect waves-light btn-red">Svuota Carrello</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Sezione Store -->
+        <!-- Logo Store centrato -->
+        <img src="https://i.postimg.cc/c1tJhQFQ/STORE.png" alt="Logo Store" class="logo-store">
+
+        <hr>
+        <div class="row">
+            <div class="col s12 m4" th:each="prodotto : ${lista}">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="custom" th:src="${prodotto.url}" alt="Immagine Prodotto">
+                        <span class="card-title" th:text="${prodotto.nome}"></span>
+                    </div>
+                    <div class="card-content">
+                        <form action="/add" method="post">
+                            <div class="input-field">
+                                <input type="number" name="selected" value="0" min="0">
+                                <label>Quantit&agrave;</label>
+                            </div>
+                            <input type="hidden" name="nome" th:value="${prodotto.nome}">
+                            <button type="submit" class="btn-small waves-effect waves-light btn-green">Aggiungi</button>
+                        </form>
+                        <form action="/del" method="post" style="margin-top: 10px;">
+                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <a href="/private/form" class="btn blue lighten-2 btn-blue">&larr; Torna ad aggiungere prodotti</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 - Il tuo negozio di arredamento</p>
+    </footer>
+</body>
+</html>

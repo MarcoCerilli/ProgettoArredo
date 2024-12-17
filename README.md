@@ -48,9 +48,9 @@ Le tecnologie utilizzate per questa applicazione sono:
   - 
 ### Html
   
-  - [Index]() - _the homepage: it contains a shop description, the card of the item sold in shop and a div with a random mario card obtained interrogating an API_
+  - [Home](ProgettoIkea/src/main/resources/templates/Home.html) - _the homepage: it contains a shop description, the card of the item sold in shop and a div with a random mario card obtained interrogating an API_
 
-  - [Fattura]() - _the order confirmation page: it contains a table with the list of every item purchased and a box where the user can put the email address to recieve an order recap_
+  - [Ricevuta]() - _the order confirmation page: it contains a table with the list of every item purchased and a box where the user can put the email address to recieve an order recap_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

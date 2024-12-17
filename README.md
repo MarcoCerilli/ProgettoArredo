@@ -41,18 +41,18 @@ Le tecnologie utilizzate per questa applicazione sono:
 
 
 ### Java
-  - [Database Config](DatabaseConfig.java) - _configures the connection to the MySql database_
-  - [Mail Config](MailConfig.java) - _configures the connection to gmail_
-  - [Email Service](EmailService.java) - _provides some useful mail templates_
-  - [Pc](Pc.java) - _is the personal computer in store class: it has model name, brand,description, price, image, quantity available in store and quantity sold. reflects the columns of the database table_
-  - [PcSelezionato](PcSelezionato.java) - _is the personal computer in shopping cart class: it has model name, brand,description, price, image, quantity selected for purchase_
-  - [PcJdbcTemplate](PcJdbcTemplate.java) - _is the class containing the database queries: select, insert, delete and update quantity (to update the available number and sold number of a given pc)_
-  - [MyController](MyController.java) - _a class that handles HTTP requests and responses, facilitating the interaction between the front end and the back end of the application._
+  - [Database Config] - _configures the connection to the MySql database_
+  - [Mail Config]() - _configures the connection to gmail_
+  - [Email Service]() - _provides some useful mail templates_
+  - 
+  - 
+  - [MyController]() - _a class that handles HTTP requests and responses, facilitating the interaction between the front end and the back end of the application._
+  - 
 ### Html
-  - [Layout](templates/layout/layout.html) - _the layout of every html page. It contains the css libraries, JavaScript scripts, a navbar, a sidebar and a footer_
+  
   - [Index](templates/index.html) - _the homepage: it contains a shop description, the card of the item sold in shop and a div with a random mario card obtained interrogating an API_
-  - [Carrello](templates/carrello.html) - _the cart page: it contains a table with the list of every item purchased. The user can modify the quantity, remove from cart and purchase the selected items_
-  - [Fattura](templates/fattura.html) - _the order confirmation page: it contains a table with the list of every item purchased and a box where the user can put the email address to recieve an order recap_
+
+  - [Fattura]() - _the order confirmation page: it contains a table with the list of every item purchased and a box where the user can put the email address to recieve an order recap_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -64,3 +64,12 @@ Project Link:    https://github.com/MarcoCerilli/ProgettoArredo.git
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Acknowledgments
+
+* [Carlo Inserra](https://github.com/Carleoinserra)
+* [
+* [
+* [
+* [
+  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

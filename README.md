@@ -44,11 +44,11 @@ Le tecnologie utilizzate per questa applicazione sono:
   - [Database Config](ProgettoIkea/src/main/java/com/example/demo/DatabaseConfig.java)- _configures the connection to the MySql database_
   - [Mail Config](ProgettoIkea/src/main/java/com/example/demo/MailConfig.java) - _configures the connection to gmail_
   - [Email Service](ProgettoIkea/src/main/java/com/example/demo/EmailService.java) - _provides some useful mail templates_
-  - [MyController]() - _a class that handles HTTP requests and responses, facilitating the interaction between the front end and the back end of the application._
+  - [MyController](ProgettoIkea/src/main/java/com/example/demo/MyController.java) - _a class that handles HTTP requests and responses, facilitating the interaction between the front end and the back end of the application._
   - 
 ### Html
   
-  - [Index](templates/index.html) - _the homepage: it contains a shop description, the card of the item sold in shop and a div with a random mario card obtained interrogating an API_
+  - [Index]() - _the homepage: it contains a shop description, the card of the item sold in shop and a div with a random mario card obtained interrogating an API_
 
   - [Fattura]() - _the order confirmation page: it contains a table with the list of every item purchased and a box where the user can put the email address to recieve an order recap_
 

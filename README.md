@@ -1,6 +1,7 @@
 Questo progetto simula un E-commerce di arredamento
 
-![image](https://github.com/user-attachments/assets/a21e0fe7-ab6b-44e0-97c7-58de9633d694)
+![image](https://github.com/user-attachments/assets/cd405075-e22f-48a1-9a46-a3b1ffef9f13)
+
 
 Le tecnologie utilizzate per questa applicazione sono:
 

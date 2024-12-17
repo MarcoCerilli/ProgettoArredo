@@ -56,7 +56,7 @@ Le tecnologie utilizzate per questa applicazione sono:
 
 ## Contact
 
-Irene Fabbri - [www.linkedin.com/in/marco-cerilli] - cerillimarco15@gmail.com
+Marco Cerilli- [www.linkedin.com/in/marco-cerilli] - cerillimarco15@gmail.com
 
 Project Link:    https://github.com/MarcoCerilli/ProgettoArredo.git
 

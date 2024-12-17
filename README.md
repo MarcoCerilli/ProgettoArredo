@@ -1,10 +1,15 @@
 Questo progetto simula un E-commerce di arredamento
+
 ![image](https://github.com/user-attachments/assets/a21e0fe7-ab6b-44e0-97c7-58de9633d694)
 
 Le tecnologie utilizzate per questa applicazione sono:
+
 - SpringBoot ![image](https://github.com/user-attachments/assets/3de06bbc-9012-449b-afd9-622ea7a43aeb)
+- 
 - Le dipendenze di SpringBoot utilizzate sono:
-- Spring Web 
+- 
+- Spring Web ![image](https://github.com/user-attachments/assets/7c2dd333-ba15-4e58-9488-f8096b7827fe)
+
 - Spring Security ![image](https://github.com/user-attachments/assets/2b96fb94-10de-4735-bcf8-7b5ced3d2493)
 
 - Spring Boot DevTools ![image](https://github.com/user-attachments/assets/31df0832-1433-477f-89d2-67ca19a7ca87)

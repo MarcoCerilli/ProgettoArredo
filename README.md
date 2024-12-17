@@ -38,8 +38,7 @@ Le tecnologie utilizzate per questa applicazione sono:
 - Java Mail Sender
  ![image](https://github.com/user-attachments/assets/b02bbc4f-1006-43e8-9d5f-941a000a5644)
 
-Dependencies
-Thymeleaf, Spring Web, Spring Boot Web Tools, MySql Driver, Spring Data JDBC
+
 
 ### Java
   - [Database Config](DatabaseConfig.java) - _configures the connection to the MySql database_

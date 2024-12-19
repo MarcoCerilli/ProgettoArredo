@@ -63,9 +63,9 @@ Project Link:    https://github.com/MarcoCerilli/ProgettoArredo.git
 ## Acknowledgments
 
 * [Carlo Inserra](https://github.com/Carleoinserra)
-* [
-* [
-* [
-* [
+* [Agostino Perrino]
+* [Javier Alonso Ortega]
+* [Ilenia Unida]
+
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
